@@ -23,6 +23,17 @@ a {
 	color:inherit;
 }
 
+header {
+	padding: 18px 16px;
+}
+
+.photo-grid {
+	margin-bottom: 18px;
+}
+
+.images {
+	width: 100%;
+}
 
 .container:after,.container:before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before,.cell-row:before,.cell-row:after,.clear:after,.clear:before,.bar:before,.bar:after {
 	content:"";
@@ -43,12 +54,13 @@ a {
 	padding:0.01em 16px;
 }
 
-.panel { margin-top:16px;
+.panel { 
+	margin-top:16px;
 	margin-bottom:16px;
 }
 
 .center .bar {
-	display:inline-block;
+	display: inline-block;
 	width:auto;
 }
 
@@ -64,40 +76,50 @@ a {
 	opacity:100;
 }
 
-.col,.half,.third,.twothird,.threequarter,.quarter {
+.col,.third,.twothird,.threequarter,.quarter {
 	float:left;
 	width:45%;
+}
+
+.half {
+	float: left;
+	width: 45%;
+	padding-left: 10px;
 }
 
 .half-2 {
 	float: right;
 	width: 45%;
+	padding-right: 10px;
 }
+
 .xlarge {
 	font-size:24px!important;
 }
 
 .padding-32 {
-	padding-top:32px!important;
+	padding-top:0px!important;
 	padding-bottom:32px!important;
 }
 
 .border {
 	border:0px solid #ccc!important;
+	box-shadow: 0px 10px 10px lightgray;
 }
 
 .bar {
 	width:100%;
 	overflow:hidden;
+
 }
 
 .bar .bar-item {
 	padding:8px 16px;
-	float:left;
+	float:none;
 	width:auto;
 	border:none;
 	outline:none;
-	display:block;
+	display:inline-block;
 }
 
 .bar .dropdown-hover,.bar .dropdown-click {
@@ -171,19 +193,25 @@ a {
     color: white;
 }
 
-.padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.padding-64 {
+	padding-top:64px!important;
+	padding-bottom:64px!important;
+}
 
-.light-grey,.hover-light-grey:hover,.light-gray,.hover-light-gray:hover{color:black;background-color:white}
+.light-grey,.hover-light-grey:hover,.light-gray,.hover-light-gray:hover {
+	color:black;
+	background-color:white;
+}
 
-.large{font-size:18px!important}
+.large {
+	font-size:18px!important;
+}
 
 .social:hover {
     color:maroon;
-    
 }
 
-.email {
-    
+.email {    
     background-color:maroon;
     outline: none; /* Remove outline */
     background-color: maroon; /* Set a background color */
@@ -191,10 +219,10 @@ a {
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 4px; /* Rounded corners */
+    text-decoration: none;
 }
 
-.email:hover {
-    
+.email:hover {    
     background-color: lightcoral;
 }
 
@@ -229,27 +257,32 @@ input[type=text], select, textarea {
 }
 
 @media (max-width:600px) {
-	
-	.bar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile {
-		text-align:center;
-	}
-
-	.dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button {
-		width:100%
-	}
-
-	.half, .half-2{
-		float: none;
+	.half {
 		display: inline-block;
-		width: 100%;
+		width: 96%;
+		float: none;
 	}
 
-@media (min-width:601px) {
-	
-	.half, .half-2 {
-		float: none;
+	.half-2 {
 		display: inline-block;
-		width: 100%;
+		width: 96%;
+		float: none;
+
+	}
+
+/* @media (min-width:601px) {
+	.half {
+		display: inline-block;
+		width: 96%;
+		float: none;
+		padding-right: 10%
+	}
+
+	.half-2 {
+		display: inline-block;
+		width: 96%;
+		float: none;
+
 	}
 
 }
