@@ -266,17 +266,8 @@ input[type=text], select, textarea {
 }
 
 @media (max-width:600px) {
-	.half {
-		display: inline-block;
-		width: 96%;
-		float: none;
-	}
-
-	.half-2 {
-		display: inline-block;
-		width: 96%;
-		float: none;
-
+	.homepage-image {
+		width: 95%;
 	}
 }
 
