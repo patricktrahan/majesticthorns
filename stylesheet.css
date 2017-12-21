@@ -272,6 +272,10 @@ input[type=text], select, textarea {
 	.images {
 		width: 95%;
 	}
+	
+	.construction-opacity {
+		min-width: 95%;
+	}
 }
 
 .card {
