@@ -269,6 +269,10 @@ input[type=text], select, textarea {
 	.homepage-image {
 		width: 95%;
 	}
+	
+	.images {
+		width: 95%;
+	}
 }
 
 .card {
