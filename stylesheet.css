@@ -265,7 +265,7 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the useEustachian tube blockager to vertically resize the textarea (not horizontally) */
 }
 
-@media (max-width:800px) {
+@media (max-width:600px) {
 	h1 {
 		font-size: 23px;
 	}
