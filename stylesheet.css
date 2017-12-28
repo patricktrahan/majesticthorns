@@ -266,6 +266,9 @@ input[type=text], select, textarea {
 }
 
 @media (max-width:600px) {
+	h1 {
+		font-size: 23px;
+	}
 	
 	.homepage-image {
 		width: 95%;
