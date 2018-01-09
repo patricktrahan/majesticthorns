@@ -23,9 +23,17 @@ h1 {letter-spacing: 6px}
 
 <!-- Header -->
 <header class="panel center opacity">
-  <h1>Majestic Thorns</h1>
-  <h1 class="xlarge">Kelly Chehardy</h1>
   
+  <div id="menuIcon" class="menu" onclick="openNav(),hideMenu()">&#9776; </div>
+
+  <div itemscope itemtype="http://schema.org/VisualArtwork">
+    <h1 itemprop="artist" class="mainTitle">Majestic Thorns </h1>
+    <div itemscope itemtype="http://schema.org/Person">
+      <h1 itemprop="name" class="xlarge">Kelly Chehardy</h1>
+    </div>
+  </div>
+
+  <!--Menu Bar-->
   <div class="padding-32">
     <div class="bar border">
       <a href="index.html" class="bar-item button">Home</a>
@@ -36,6 +44,19 @@ h1 {letter-spacing: 6px}
       <a href="contact.html" class="bar-item button">Contact</a>
     </div>
   </div>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav(),showMenu()">&times;</a>
+  <div class="overlay-content">
+      <a href="index.html" class="bar-item button">Home</a>
+      <a href="dolls.html" class="bar-item button">Dolls</a>
+      <a href="costumes.html" class="bar-item button">Costumes</a>
+      <a href="drawings.html" class="bar-item button">Drawings</a>
+      <a href="about.html" class="bar-item button activepage">About</a>
+      <a href="contact.html" class="bar-item button">Contact</a>
+  </div>
+</div>
+
 </header>
 
 <!-- Photo Grid -->
@@ -61,10 +82,10 @@ h1 {letter-spacing: 6px}
   <a href="https://www.etsy.com/shop/MajesticThorns" class="fa fa-etsy social"></a>
   <a href="https://themajesticthorn.wordpress.com" class="fa fa-wordpress social"></a>
   <a href="https://twitter.com/majesticthorns" class="fa fa-twitter social"></a>
-  <p>&copy Majestic Thorns 2017</p>
+  <p>&copy Majestic Thorns 2018</p>
 </footer>
 
-<script type="text/javascript" src="javascript.js"></script>
+<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>

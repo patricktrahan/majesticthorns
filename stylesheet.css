@@ -28,6 +28,10 @@ header {
 	padding: 18px 16px;
 }
 
+.mainTitle {
+	padding-left: 0px;
+}
+
 .photo-grid {
 	margin-bottom: 10px;
 }
@@ -67,6 +71,10 @@ header {
 	margin-bottom:16px;
 }
 
+.closebtn {
+	display: none;
+}
+
 .center .bar {
 	display: inline-block;
 	width:auto;
@@ -102,7 +110,7 @@ header {
 }
 
 .xlarge {
-	font-size:20px!important;
+	font-size:20px;
 }
 
 .padding-32 {
@@ -203,8 +211,13 @@ header {
 }
 
 .padding-64 {
-	padding-top:64px!important;
-	padding-bottom:64px!important;
+	padding-top:20px!important;
+	padding-bottom:20px!important;
+}
+
+.email-padding {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .light-grey,.hover-light-grey:hover,.light-gray,.hover-light-gray:hover {
@@ -265,12 +278,26 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the useEustachian tube blockager to vertically resize the textarea (not horizontally) */
 }
 
+.menu {
+    display: none;
+}
+
+.overlay {
+	display: none;
+}
+
 @media (max-width:600px) {
 	h1 {
-		font-size: 23px;
+		font-size: 15px;
 	}
 
-	
+	.mainTitle{
+		padding-left: 20px;
+	}
+
+	.xlarge {
+		font-size: 15px;
+	}
 	.homepage-image {
 		width: 95%;
 	}
@@ -280,6 +307,91 @@ input[type=text], select, textarea {
 
 	.construction-opacity {
 		min-width: 95%;
+	}
+
+	.overlay {
+		display: initial;
+        width: 100%;
+        height: 0%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(245,245,245, 0.9);
+        overflow-y: hidden;
+        transition: 0.2s;
+    }
+
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        padding: 20px;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay-content a:active {
+    	color: white;
+    }
+    .overlay-content a:hover, .overlay-content a:focus {
+        color:white;
+		background-color:lightcoral;
+    }
+
+    .overlay .closebtn {
+       display: block;
+    	position: relative;
+    	float: right;
+    	font-size:30px;
+    	cursor:pointer;
+    	margin-top: 0px;
+    	margin-right: 8px;
+    	padding-bottom: 0px;
+    }
+    .menu {
+    	display: block;
+    	position: relative;
+    	float: right;
+    	font-size:20px;
+    	cursor:pointer;
+    	margin-top: 10px;
+    	padding-left: 0;
+    	padding-bottom: 0px;
+    }
+
+    .menu:hover {
+    	color: lightgray;
+    	transition-duration: 0.1s;
+    	-webkit-transition-duration: 0.1s;
+    }
+
+    .closebtn:hover{
+    	color: lightgray;
+    	transition-duration: 0.1s;
+    	-webkit-transition-duration: 0.1s;
+    }
+
+    .border {
+		border:0px solid #ccc!important;
+		box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.padding-32 {
+		display: none;
+	}
+
+	.overlay .activepage {
+    	background-color: darkred;
+    	color: white;
 	}
 }
 
