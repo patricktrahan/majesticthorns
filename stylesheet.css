@@ -229,6 +229,9 @@ header {
 	font-size:18px!important;
 }
 
+.social {
+    text-decoration:none;
+}
 .social:hover {
     color:maroon;
 }
