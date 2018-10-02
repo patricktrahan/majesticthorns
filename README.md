@@ -1,5 +1,5 @@
 # majesticthorns.github.io
 Majestic Thorns Artist Portolio Website
 
-Portfolio website for the artist known as Majestic Thorns
+Portfolio Website
 www.majesticthorns.com
