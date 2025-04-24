@@ -2,4 +2,4 @@
 Majestic Thorns Artist Portolio Website
 
 Portfolio Website
-www.majesticthorns.com
+majesticthorns.com
